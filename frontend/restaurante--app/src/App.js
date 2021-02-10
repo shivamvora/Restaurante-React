@@ -9,8 +9,8 @@ import PedidosFeitos from './Pedidos/Pedidos'
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom'
 
 
-
-function App() {
+/*it is better way to define functional component*/
+const App = () => {
       const [produtos, setProdutos] = useState({})
       const [carregando, setCarregando] = useState(true)
       let [carrinho, setCarrinho] = useState([])
